@@ -1,11 +1,11 @@
 # PCINet
-Código referente ao paper _Automatic mapping of high-risk urban areas for Aedes aegypti infestation based on building facade image analysis_ publicado na PLOS One em 2024.
-- ```facades.ipynb```: Notebook principal com o treinamento k-fold e extração de métricas resultado. Treinamento e testes realizados nas fotos tiradas por agentes de saúde pública.
-- ```inferencias_5classes.csv```: inferências do PCI 5 classes sobre as fotos dos agentes de saúde (separados por fold).
-- ```models/folds.dict```: dicionário com as amostras associadas a cada fold
-- ```models/best_fold0*.pt```: modelo treinado em cada um dos folds listados em ```folds.dict```.
-- ```results/activations*.pdf```: distribuição de ativações para diferentes cenários (por fold, por classe, etc.)
-- ```results/cm_fold0*.pdf```: matrizes de confusão por fold.
-- ```streetview/data.ipynb```: exploração de dados das imagens coletadas via streetview e rotuladas por agentes de saúde.
--  ```streetview/inference.ipynb```: **Pipeline de inferência** com os modelos treinados nas fotos dos agentes de saúde, aqui testados nas imagens coletadas do streetview.
-- ```streetview/inferences.csv```: inferências com os 5 diferentes modelos sobre as imagens do streetview.
+Code refering to the paper _Automatic mapping of high-risk urban areas for Aedes aegypti infestation based on building facade image analysis_ (in review - PLOS One 2024)
+- ```facades.ipynb```: Main Notebook containing the k-fold training procedure and resulting metrics. The training and testing are performed with the photos taken in place by the public health agents.
+- ```inferencias_5classes.csv```: PCI inferences for the photos taken by the agends (separated by fold).
+- ```models/folds.dict```: dictionary with the samples associated with each fold.
+- ```models/best_fold0*.pt```: models trained with each of the folds listed in ```folds.dict```. 
+- ```results/activations*.pdf```: distribution of activations for different scenarios (per fold, per class, etc.).
+- ```results/cm_fold0*.pdf```: confusion matrix per fold.
+- ```streetview/data.ipynb```: data exploration of the images collected from Google Street View and labeled by public health agents.
+-  ```streetview/inference.ipynb```: **Inference Pipeline** with the models trained on top of the photos taken by the agents, here tested with Street View images.
+- ```streetview/inferences.csv```: inferences with the 5 diffente models (for each fold) for the Street View images.
